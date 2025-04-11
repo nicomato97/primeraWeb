@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+    <link rel="stylesheet" href="estilo-pagina.css">
+
+</head>
+<body>
+
+  <div id="cuerpo">
+  <header id="encabezado">
+    <img src="img/blockchain1.png" alt="logo">
+    <h1>Mi Primera Página Web</h1>
+  </header>
+
+  <nav id="menu">
+      <a href="#" class="nav-enlace">Inicio</a>
+      <a href="#" class="nav-enlace">Productos</a>
+      <a href="#" class="nav-enlace">Servicios</a>
+      <a href="#" class="nav-enlace">Promociones</a>
+  </nav>
+
+  <section id="seccion">
+    <article class="articulo">
+        Articulo 1
+        <div class="contenido-oculto">
+            <p>Aprende HTML, con este vídeo gratuito.</p>
+            <a href="https://www.youtube.com/watch?v=3nYLTiY5skU&t=57s" class="link-oculto link1">HTML</a>
+        </div>
+    </article>
+    <article class="articulo">
+        Articulo 2
+        <div class="contenido-oculto">
+            <p>Aprende CSS, con este vídeo gratuito.</p>
+            <a href="https://www.youtube.com/watch?v=TlJbu0BMLaY" class="link-oculto link2">CSS</a>
+        </div>
+    </article>
+    <article class="articulo">
+        Articulo 3
+        <div class="contenido-oculto">
+            <p>Aprende JavaScript, con este vídeo gratuito.</p>
+            <a href="https://www.youtube.com/watch?v=Z34BF9PCfYg" class="link-oculto link3">JavaScript</a>
+        </div>
+    </article>
+  </section>
+
+  <aside id="lateral">
+    <h2>Formulario Web</h2>
+    <table border="0">
+      <tr>
+        <td>Nombre: </td>
+        <td><input type="text" name="txtNombre" required></td>
+      </tr>
+      <tr>
+        <td>Correo: </td>
+        <td><input type="email" name="miEmail" placeholder="Ingrese email" required></td>
+      </tr>
+      <tr>
+        <td>Estrato: </td>
+        <td><input type="number" name="numEst" min="1"
+          max="6" step="1" required></td>
+      </tr>
+      <tr>
+        <td>Fecha: </td>
+        <td><input type="date" name="fecha" required></td>
+      </tr>
+      <tr>
+        <td><input type="submit" name="btnEnviar" value="Enviar"></td>
+      </tr>
+    </table>
+  </aside>
+
+
+  <!-- <ul class="carousel">
+    <li>1</li>
+    <li>2</li>  
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+  <ul> -->
+
+      
+    <section id="slider">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <!-- Primer set -->
+          <img src="img/HTML5_logo_and_wordmark.svg.png" alt="HTML">
+          <img src="img/CSS3_logo_and_wordmark.svg.png" alt="CSS">
+          <img src="img/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+          <img src="img/base-datos.png" alt="Base de Datos">
+          <img src="img/PHP-logo.png" alt="PHP">
+          <img src="img/Python-logo.png" alt="Python">
+          <img src="img/astro-logo.png" alt="Astro">
+          <img src="img/react-logo.png" alt="React">
+          <img src="img/Node.js_logo.svg.png" alt="Node.js">
+    
+          <!-- Segundo set idéntico para bucle perfecto -->
+          <img src="img/HTML5_logo_and_wordmark.svg.png" alt="HTML">
+          <img src="img/CSS3_logo_and_wordmark.svg.png" alt="CSS">
+          <img src="img/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+          <img src="img/base-datos.png" alt="Base de Datos">
+          <img src="img/PHP-logo.png" alt="PHP">
+          <img src="img/Python-logo.png" alt="Python">
+          <img src="img/astro-logo.png" alt="Astro">
+          <img src="img/react-logo.png" alt="React">
+          <img src="img/Node.js_logo.svg.png" alt="Node.js">
+        </div>
+      </div>
+    </section>
+
+    <div class="fundamentos-prog-web">
+      <a href="https://www.youtube.com/watch?v=3nYLTiY5skU">HTML</a>
+      <a href="https://www.youtube.com/watch?v=TlJbu0BMLaY">CSS</a>
+      <a href="https://www.youtube.com/watch?v=1glVfFxj8a4">JavaScript</a>
+      <a href="https://www.youtube.com/watch?v=fUgxxhI_bvc&list=PLUofhDIg_38pNCZe9ptj72exbFjzyePxT">TypeScript</a>
+      <a href="https://www.youtube.com/watch?v=6of9yHaGC78&list=PLUofhDIg_38qg8LANkItqY-0sYw7CTDui">SQL - Base de Datos</a>
+      <a href="https://www.youtube.com/watch?v=BcGAPkjt_IE&list=PLUofhDIg_38rCmybY4E_bmGvUHaSw7-oc">PHP</a>
+      <a href="https://www.youtube.com/watch?v=TkN2i-_4N4g&t=32s">Python</a>
+      <a href="https://www.youtube.com/watch?v=RB5tR_nqUEw&list=PLUofhDIg_38q8ZBsl9-GPRNI1AIjkRIHZ">Framework - Astro.js</a>
+      <a href="https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29&index=2">Framework - React.js</a>
+      <a href="https://www.youtube.com/watch?v=yB4n_K7dZV8&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7">Framework - N<span>o</span>de<span>.js</span></a>
+    </div>
+    
+    
+    
+    
+
+  <footer id="pie">
+      <h5 data-text="este es el espacio para el pie de página">este es el espacio para el pie de página</h5>
+  </footer>
+    
+  <script>
+    
+    document.querySelectorAll(".articulo").forEach(articulo => {
+        articulo.addEventListener("click", () => {
+            const contenido = articulo.querySelector(".contenido-oculto");
+            contenido.classList.toggle("visible");
+        });
+    });
+
+  </script>
+
+</body>
+</html>
