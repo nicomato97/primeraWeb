@@ -1,0 +1,25 @@
+name: Build Rumbo11 Phase10 Kit
+on:
+  push:
+    branches: [tmp-rumbo11-phase10-kit]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Python syntax
+        run: python -m py_compile finalize_phase10.py
+      - name: Prepare artifact
+        run: |
+          mkdir -p dist/Rumbo11_Fase_10_Kit
+          cp finalize_phase10.py CONSTRUIR_FASE10.bat README_FASE10.md dist/Rumbo11_Fase_10_Kit/
+          cd dist
+          zip -r Rumbo11_Fase_10_Kit.zip Rumbo11_Fase_10_Kit
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Rumbo11_Fase_10_Kit
+          path: dist/Rumbo11_Fase_10_Kit.zip
+          if-no-files-found: error
